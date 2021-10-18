@@ -12,8 +12,24 @@ export class ListadoComponent
 
   public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
 
+  public posicion: number = 0;
 
-  public items: string[] = [ 'ss', 'defe' ];
+  public contador ()
+  {
+    this.posicion = this.posicion++;
+
+    return this.posicion;
+  }
+
+  removeItem ( index: any )
+  {
+    this.nombres.splice( index, 1 );
+  }
+
+
+
 
 
 }
+
+

@@ -1,9 +1,19 @@
+<link rel="stylesheet" href="listado.component.css">
+
 <div>
     <h3>wafda</h3>
 
 
+    <h1>{{posicion}}</h1>
+
+    <h1 id="sinEliminar" class="sinEliminar">No has eliminado a ningun heroe</h1>
+
+    <h1 id="eliminado" *ngIf="true">Has eliminado a :{{nombres[posicion-1]}}</h1>
+
+    <button class="borrar" id="borrar" (click)="posicion = posicion+1"> Eliminar </button>
+
     <ul>
-        <li *ngFor="let item of nombres">
+        <li *ngFor="let item of nombres|slice:posicion:nombres.length">
             {{item}}
         </li>
     </ul>
