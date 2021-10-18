@@ -13,7 +13,7 @@ export class ListadoComponent
 
   public mostrar: boolean = false;
   public hide: boolean = true;
-
+  public hideDelete: boolean = true;
 
   public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
 
@@ -33,6 +33,14 @@ export class ListadoComponent
   ocultar ()
   {
     this.hide = false;
+  }
+  ocultarDelete ()
+  {
+    if ( this.posicion > this.nombres.length )
+    {
+      this.hideDelete = false;
+      this.mostrar = false;
+    }
   }
 
 }

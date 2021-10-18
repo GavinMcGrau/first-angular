@@ -7,7 +7,7 @@
 
     <h1 id="eliminado" *ngIf="mostrar">Has eliminado a :{{nombres[posicion-1]}}</h1>
 
-    <button class="borrar" id="borrar" (click)="posicion = posicion+1; cambio();ocultar()"> Eliminar </button>
+    <button class="borrar" id="borrar" *ngIf="hideDelete" (click)="posicion = posicion+1; cambio();ocultar();ocultarDelete()"> Eliminar </button>
 
     <ul>
         <li *ngFor="let item of nombres|slice:posicion:nombres.length">
