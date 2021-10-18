@@ -1,7 +1,19 @@
 <div>
-<h3>wafda</h3>
-<ul>
-    <li *ngFor="let nombre of nombres">{{nombre}}</li>
+    <h3>wafda</h3>
+    <ul>
+        <li>{{nombres}}</li>
+    </ul>
+
+    <ul>
+        <li *ngFor="let item of nombres[1]">
+            {{item}}
+        </li>
+    </ul>
+</div>
+
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let it of items">{{ it }}</li>
 </ul>
 
-</div>
+<h2>{{items}}</h2>
