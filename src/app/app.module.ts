@@ -7,18 +7,19 @@ import { HeroesComponent } from './heroes/heroe/heroe.component';
 import { ListadoComponent } from './heroes/listado/listado.component';
 
 
-@NgModule({
+@NgModule( {
   declarations: [
     AppComponent,
     ContadorComponent,
-    HeroesComponent
-    
+    HeroesComponent,
+    ListadoComponent
+
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [HeroesComponent,ListadoComponent]
- 
-})
+  bootstrap: [ HeroesComponent, ListadoComponent ]
+
+} )
 export class AppModule { }

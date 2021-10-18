@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListadoComponent
 {
 
-  nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
+  public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
 
 
   public items: string[] = [ 'ss', 'defe' ];
