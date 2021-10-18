@@ -10,8 +10,10 @@
     <button class="borrar" id="borrar" *ngIf="hideDelete" (click)="posicion = posicion+1; cambio();ocultar();ocultarDelete()"> Eliminar </button>
 
     <ul>
-        <li *ngFor="let item of nombres|slice:posicion:nombres.length">
-            {{item}}
+        <li class="lista" *ngFor="let item of nombres|slice:posicion:nombres.length ">
+
+            <a class="elementoLista">{{item}}</a>
         </li>
     </ul>
+
 </div>

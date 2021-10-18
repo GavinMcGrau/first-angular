@@ -4,4 +4,11 @@
     background-color: black;
 }
 
-.sinEliminar {}
+.lista {
+    list-style: none;
+}
+
+.elementoLista {
+    text-decoration: none;
+    color: black;
+}

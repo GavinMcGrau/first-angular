@@ -14,6 +14,8 @@ export class ListadoComponent
   public mostrar: boolean = false;
   public hide: boolean = true;
   public hideDelete: boolean = true;
+  public muestraHeroe = "";
+
 
   public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
 
