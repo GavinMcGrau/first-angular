@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styleUrls: [ './listado.component.css' ]
+
 } )
 export class ListadoComponent
 {
+
+  public mostrar: boolean = false;
+  public hide: boolean = true;
+
 
   public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
 
@@ -21,15 +26,14 @@ export class ListadoComponent
     return this.posicion;
   }
 
-  removeItem ( index: any )
+  cambio ()
   {
-    this.nombres.splice( index, 1 );
+    this.mostrar = true;
+  }
+  ocultar ()
+  {
+    this.hide = false;
   }
 
-
-
-
-
 }
-
 
