@@ -1,4 +1,4 @@
-.cambiar{
+.cambiar {
     height: 7vh;
     width: 12vw;
     border-radius: 5px;
@@ -8,12 +8,21 @@
     margin-right: 5px;
     margin-left: 5px;
     padding: 5px 10px;
-    background-color: black;
+    background-color: rgba(10, 123, 168, 0.603);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
 }
 
-.nombreHeroe{
-    margin-left: 9%;
-    
+.seccion1 {
+    background-color: rgba(32, 122, 134, 0.685);
+    text-align: center;
+    border-radius: 3%;
+    justify-content: center;
+    height: 155px;
+    width: fit-content;
+    align-items: center;
+    margin-left: 37%;
+    border-style: groove;
+    border-color: rgb(219, 7, 173);
+    color: white;
 }

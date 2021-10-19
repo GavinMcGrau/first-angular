@@ -1,14 +1,35 @@
 .borrar {
-    width: 65px;
-    height: 25px;
-    background-color: black;
+    width: 110px;
+    height: 45px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    font-size: x-large;
 }
 
 .lista {
     list-style: none;
 }
 
-.elementoLista {
+.lista-item {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-align: center;
+    font-size: xx-large;
+    margin-left: -5%;
+}
+
+.seccion2 {
+    left: 37.5%;
+    background-color: rgba(32, 122, 134, 0.685);
+    border-radius: 2%;
+    height: 40%;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    border-style: groove;
+    border-color: rgb(219, 7, 173);
+    color: rgb(255, 255, 255);
 }
