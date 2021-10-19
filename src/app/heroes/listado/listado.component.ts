@@ -14,10 +14,13 @@ export class ListadoComponent
   public mostrar: boolean = false;
   public hide: boolean = true;
   public hideDelete: boolean = true;
-  public muestraHeroe = "";
+  public muestraHeroe = " ";
 
 
-  public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman' ];
+
+
+
+  public nombres: string[] = [ 'Superman', 'Electroman', 'Javaman', 'Bravoman', 'Megaman' ];
 
   public posicion: number = 0;
 
@@ -42,6 +45,23 @@ export class ListadoComponent
     {
       this.hideDelete = false;
       this.mostrar = false;
+    }
+  }
+
+  returnItem ( item: any )
+  {
+    return item;
+  }
+
+  muestraHeroeClick ()
+  {
+    if ( this.muestraHeroe == " " )
+    {
+      return "No se ha seleccionado ningun heroe";
+
+    } else
+    {
+      return this.muestraHeroe;
     }
   }
 

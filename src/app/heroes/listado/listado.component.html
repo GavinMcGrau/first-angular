@@ -8,11 +8,11 @@
     <h1 id="eliminado" *ngIf="mostrar">Has eliminado a :{{nombres[posicion-1]}}</h1>
 
     <button class="borrar" id="borrar" *ngIf="hideDelete" (click)="posicion = posicion+1; cambio();ocultar();ocultarDelete()"> Eliminar </button>
-
+    <h1>{{ muestraHeroeClick()}}</h1>
     <ul>
-        <li class="lista" *ngFor="let item of nombres|slice:posicion:nombres.length ">
+        <li class="lista-item" (click)="muestraHeroe=returnItem(item)" *ngFor="let item of nombres|slice:posicion:nombres.length">
 
-            <a class="elementoLista">{{item}}</a>
+            <div class="elementoLista">{{item}}</div>
         </li>
     </ul>
 
