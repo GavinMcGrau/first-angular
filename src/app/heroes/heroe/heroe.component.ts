@@ -2,46 +2,53 @@
 import { Component } from '@angular/core';
 
 
-@Component({
+@Component( {
   selector: 'heroe-component',
   templateUrl: './heroe.component.html',
-  styleUrls: ['./heroe.component.css'] 
-})
-export class HeroesComponent {
-  
-  nombre:String ="Batman";
-  edad:number = 22;
+  styleUrls: [ './heroe.component.css' ]
+} )
+export class HeroesComponent
+{
+
+  nombre: String = "Batman";
+  edad: number = 22;
 
 
-  getNombres(){
+  getNombres ()
+  {
     this.getNombre;
   }
 
-   getNombre(){
-   /*  document.getElementById("nombreHeroe")!.innerHTML="Batman"; */
-   return this.nombre
+  getNombre ()
+  {
+    /*  document.getElementById("nombreHeroe")!.innerHTML="Batman"; */
+    return this.nombre
   }
 
-  getConcatenado():String{
-    return  this.nombre+this.edad.toString();
+  getConcatenado (): String
+  {
+    return this.nombre + this.edad.toString();
   }
 
-  getUppers():String{
+  getUppers (): String
+  {
     return this.nombre.toUpperCase();
   }
 
-    changeName(){
-      let nombres:string[]=["Ironman","Javaman","Pythonman","Nextman"]
-      
-      this.nombre="Superman";
-       }
+  changeName ()
+  {
+    let nombres: string[] = [ "Ironman", "Javaman", "Pythonman", "Nextman" ]
 
-   changeEdad(){
-    this.edad = Math.floor(Math.random() * 55) + 1;
+    this.nombre = "Superman";
+  }
+
+  changeEdad ()
+  {
+    this.edad = Math.floor( Math.random() * 55 ) + 1;
     return this.edad;
-  } 
+  }
 }
- 
+
 
 
 

@@ -1,0 +1,45 @@
+.submitPersonajes {
+    background-color: rgb(22, 150, 236);
+    align-items: center;
+    align-content: center;
+    color: aliceblue;
+    margin-top: 0.5%;
+    width: 80%;
+    height: 35px;
+}
+
+form {
+    background-color: rgba(42, 165, 159, 0.555);
+    width: fit-content;
+    color: aliceblue;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 42%;
+    font-size: xx-large;
+    width: 25%;
+}
+
+li {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.poderInput {
+    height: 50px;
+    width: 110px;
+    display: block;
+    font-size: x-large;
+}
+
+.nombreInput {
+    height: 50px;
+    width: 110px;
+    display: block;
+    font-size: x-large;
+}
+
+.insertar {
+    margin-left: 3%;
+}

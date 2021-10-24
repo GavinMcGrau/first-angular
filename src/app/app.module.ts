@@ -9,6 +9,7 @@ import { DbzModule } from './dbz/dbz.module';
 import { HeroesComponent } from './heroes/heroe/heroe.component';
 import { ListadoComponent } from './heroes/listado/listado.component';
 import { MainPageComponent } from './dbz/main-page/main-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,16 +20,18 @@ import { MainPageComponent } from './dbz/main-page/main-page.component';
     HeroesComponent,
     ListadoComponent,
     MainPageComponent
-    
+
 
 
   ],
   imports: [
     BrowserModule,
-    DbzModule
+    DbzModule,
+    FormsModule
+
   ],
   providers: [],
-  bootstrap: [ /* HeroesComponent, ListadoComponent, */DbzComponent,MainPageComponent ]
+  bootstrap: [ /* HeroesComponent, ListadoComponent, DbzComponent,*/ MainPageComponent ]
 
 } )
 export class AppModule { }
