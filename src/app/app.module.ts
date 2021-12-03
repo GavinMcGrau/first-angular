@@ -3,8 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
+import { DbzComponent } from './dbz/dbz.component';
+/* import { DbzComponent } from './dbz/dbz.component'; */
+import { DbzModule } from './dbz/dbz.module';
 import { HeroesComponent } from './heroes/heroe/heroe.component';
 import { ListadoComponent } from './heroes/listado/listado.component';
+import { MainPageComponent } from './dbz/main-page/main-page.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule( {
@@ -12,14 +18,20 @@ import { ListadoComponent } from './heroes/listado/listado.component';
     AppComponent,
     ContadorComponent,
     HeroesComponent,
-    ListadoComponent
+    ListadoComponent,
+    MainPageComponent
+
+
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DbzModule,
+    FormsModule
+
   ],
   providers: [],
-  bootstrap: [ HeroesComponent, ListadoComponent ]
+  bootstrap: [ /* HeroesComponent, ListadoComponent, DbzComponent,*/ MainPageComponent ]
 
 } )
 export class AppModule { }

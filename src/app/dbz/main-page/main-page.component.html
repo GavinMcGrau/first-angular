@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <form [ngFormOptions]="{updateOn: 'blur'}" ng-submit="update(nombreInput,poderInput)">
+
+
+        <div class="insertar">
+            <input type="text " name="nombre" id="nombreInput" class="nombreInput" placeholder="Nombre " [(ngModel)]="nombreInput" ng-Model="nombreInput">
+            <br>
+            <input type="text " name="poder" id="poderInput" class="poderInput" placeholder="Poder " [(ngModel)]="poderInput" ng-Model="poderInput">
+        </div>
+
+        <ul>
+
+            <li class="lista-item " *ngFor="let item of personajes ">
+
+                <div class="elementoLista ">{{item.nombre}} {{item.poder}}</div>
+
+            </li>
+
+            <input type="submit" value="submit" class="submitPersonajes" ng-submit="update(nombreInput,poderInput)" (click)="update(nombreInput,poderInput)">
+
+        </ul>
+
+    </form>
+
+</body>
+
+</html>
